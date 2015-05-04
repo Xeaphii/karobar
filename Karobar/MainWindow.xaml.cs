@@ -24,5 +24,10 @@ namespace Karobar
         {
             InitializeComponent();
         }
+
+        private void _login_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

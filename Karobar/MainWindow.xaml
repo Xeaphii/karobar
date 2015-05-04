@@ -1,8 +1,25 @@
 ﻿<Window x:Class="Karobar.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Login" Height="350" Width="525">
+    <Window.Resources>
+        <SolidColorBrush x:Key="WatermarkForeground"
+      Color="LightGray" />
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </Window.Resources>
     <Grid>
-        
+        <TextBlock Margin="93,160,137,119" Text="Username" VerticalAlignment="Center"
+      Foreground="{StaticResource WatermarkForeground}"
+      Visibility="{Binding Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=_username}" />
+        <TextBox x:Name="_username"
+      Background="Transparent" Margin="87,160,91,119" Padding="0,6.5,0,0" />
+
+        <TextBlock Margin="93,205,137,74" Text="Password" VerticalAlignment="Center"
+      Foreground="{StaticResource WatermarkForeground}"
+      Visibility="{Binding Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=_password}" />
+        <TextBox x:Name="_password"
+                
+      Background="Transparent" Margin="87,205,91,74" Padding="0,6.5,0,0" />
+        <Button x:Name="_login" Content="Login" HorizontalAlignment="Left" Margin="269,250,0,0" VerticalAlignment="Top" Width="147" Height="40" Click="_login_Click"/>
     </Grid>
 </Window>
