@@ -1,8 +1,153 @@
 ﻿<Window x:Class="Karobar.Dashboard"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Dashboard" Height="300" Width="300">
-    <Grid>
-        
+        Title="Dashboard" Height="600" Width="900">
+    <Grid >
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Add Customer" />
+                    <MenuItem Header="_Add Employee" />
+                    <Separator />
+                    <MenuItem Header="_Add Vendor" />
+                    <MenuItem Header="_Add Account" />
+                    <MenuItem Header="_Add item" />
+                    <Separator />
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
+                <MenuItem Header="_Edit">
+                    <MenuItem Header="_Edit Customer" />
+                    <MenuItem Header="_Edit Employee" />
+                    <Separator />
+                    <MenuItem Header="_Edit Vendor" />
+                    <MenuItem Header="_Edit Account" />
+                    <MenuItem Header="_Edit item" />
+                </MenuItem>
+                <MenuItem Header="_Transaction">
+                    <MenuItem Header="_Cash Receipt Voucher"/>
+                    <MenuItem Header="_Cash Payment Voucher"/>
+                    <Separator />
+                    <MenuItem Header="_Bank Receipt Voucher"/>
+                    <MenuItem Header="_Bank Payment Voucher"/>
+                    <Separator />
+                    <MenuItem Header="_Journal Voucher"/>
+                    <Separator />
+                    <MenuItem Header="_Item Purchase"/>
+                    <MenuItem Header="_Item Sale"/>
+                    <Separator />
+                    <MenuItem Header="_Purchase Return"/>
+                    <MenuItem Header="_Sale Return"/>
+                    <Separator />
+                    <MenuItem Header="_Price List"/>
+                    <Separator />
+                    <MenuItem Header="_Salary Sheet"/>
+                    <Separator />
+                    <MenuItem Header="_Cheque Management"/>
+                    <MenuItem Header="_Receipt Book Management"/>
+                </MenuItem>
+                <MenuItem Header="_Reports">
+                    <MenuItem Header="_List">
+                        <MenuItem Header="_Price List"/>
+                        <MenuItem Header="_Company List"/>
+                        <MenuItem Header="_Category List"/>
+                        <Separator />
+                        <MenuItem Header="_Chart of account"/>
+                        <Separator />
+                        <MenuItem Header="_Item List"/>
+                        <Separator />
+                        <MenuItem Header="_Employee List"/>
+                    </MenuItem>
+                    <MenuItem Header="_Daily Reports">
+                        <MenuItem Header="_Daily Cash Book Details"/>
+                        <MenuItem Header="_Daily Cash Book"/>
+                        <Separator />
+                        <MenuItem Header="_Daily Profit Report"/>
+                        <MenuItem Header="_Daily Stock Status Report"/>
+                        <Separator />
+                        <MenuItem Header="_Daily Purchase Report"/>
+                        <MenuItem Header="_Daily Sake Report"/>
+                        <Separator />
+                        <MenuItem Header="_Daily JV Report"/>
+                        <Separator />
+                        <MenuItem Header="_Cash and Bank Balance Report"/>
+                        <Separator />
+                        <MenuItem Header="_New Customer List"/>
+                        <Separator />
+                        <MenuItem Header="_Daily Sales Return Report"/>
+                        <MenuItem Header="_Daily Purchases Return Report"/>
+                    </MenuItem>
+                    <MenuItem Header="_Ledgers">
+                    </MenuItem>
+                    <MenuItem Header="_Item Reports">
+                    </MenuItem>
+                    <MenuItem Header="_Employee Reports">
+                        <MenuItem Header="_Employee Advance Report"/>
+                        <MenuItem Header="_Employee Salary Ledger"/>
+                        <Separator />
+                        <MenuItem Header="_Employee Sale Report"/>
+                        <MenuItem Header="_Employee Sale Summary"/>
+                        <Separator />
+                        <MenuItem Header="_Employee Margin Report"/>
+                        <MenuItem Header="_Employee Margin Summary"/>
+                        <Separator />
+                        <MenuItem Header="_Employee Commission Report"/>
+                        <MenuItem Header="_Employee Performance"/>
+                    </MenuItem>
+                    <MenuItem Header="_Misc Reports">
+                    </MenuItem>
+                    <MenuItem Header="_Installment Reports">
+                        <MenuItem Header="_Installment Ledger"/>
+                        <Separator />
+                        <MenuItem Header="_Installment Sale Report"/>
+                        <MenuItem Header="_Installment Sale Summary"/>
+                        <Separator />
+                        <MenuItem Header="_Installment Collection Report"/>
+                        <MenuItem Header="_Installment Collection Summary"/>
+                        <Separator />
+                        <MenuItem Header="_Collection Route"/>
+                        <MenuItem Header="_Installment Recovery Report"/>
+                        <MenuItem Header="_To Date O/S Report"/>
+                        <MenuItem Header="_Closed Account Report"/>
+                        <Separator />
+                        <MenuItem Header="_Installment Report Month wise"/>
+                        <Separator />
+                        <MenuItem Header="_Collector Balance Report"/>
+                        <MenuItem Header="_Collector Status Report"/>
+                        <Separator />
+                        <MenuItem Header="_Installment Balance Report"/>
+                        <MenuItem Header="_Installment Agging Report"/>
+                        <Separator />
+                        <MenuItem Header="_Daily Installment Ledger"/>
+                        <MenuItem Header="_Daily Recovery Report"/>
+                        <MenuItem Header="_Daily Installment Sheet"/>
+                        <MenuItem Header="_Daily Installment Sheet-Non 0"/>
+                        <MenuItem Header="_Daily Receipt"/>
+                        <MenuItem Header="_Receipt Book Report"/>
+                        <Separator />
+                    </MenuItem>
+                    
+                </MenuItem>
+                <MenuItem Header="_Utilities">
+                    <MenuItem Header="_Cloud Update" />
+                    <Separator />
+                    <MenuItem Header="_Last Year Balance Updation" />
+                    <MenuItem Header="_Last Year Stock Updation" />
+                    <MenuItem Header="_Last Year Installment Updation" />
+                    <MenuItem Header="_Customer Search" />
+                    <MenuItem Header="_Customer Search" />
+                    <Separator />
+                    <MenuItem Header="_Transaction Checking" />
+                </MenuItem>
+                <MenuItem Header="_User">
+                    <MenuItem Header="_Change Passwords" />
+                    <Separator />
+                    <MenuItem Header="_User Management" />
+                    <MenuItem Header="_Daily Report" />
+                    <MenuItem Header="_Monthly Report" />
+                    <MenuItem Header="_Yearly Report" />
+                </MenuItem>
+            </Menu>
+            <TextBox AcceptsReturn="True" />
+        </DockPanel>
     </Grid>
 </Window>

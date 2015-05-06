@@ -82,7 +82,7 @@ namespace Karobar
             {
                 MessageBox.Show(ex.Message);
             }
-            MessageBox.Show(Properties.Settings.Default["logged"].ToString());
+            //MessageBox.Show(Properties.Settings.Default["logged"].ToString());
             //Properties.Settings.Default["logged"] = "Some Value";
             //Properties.Settings.Default.Save();
         }
